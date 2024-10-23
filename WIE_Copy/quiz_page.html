@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MindCare Connect</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="bmi.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bmis.js"></script>
+    <script src="quiz_page.js"></script>
+</head>
+
+<body style="background-color:#FFFFFF; background-image: linear-gradient(#FFFFFF, #D3C0D2); overflow-x: hidden;">
+    <!--NAV BAR-->
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/48f879f3-f15f-4195-9ddd-126ea094aae6/webchat/config.js" defer></script>
+
+    <div style="background-color: #FFFFFF;">
+    <a><img src=""></a>
+    <a href="blog_page.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word;margin-left:900px;">Blog</div></a>
+    <a href="about_us.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word; margin-left:700px;margin-top:-37px;">About us</div></a>
+    <a href="index.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word; margin-left:240px;margin-top:-37px;">Home</div></a>
+    
+    <a href="forum_discussion_page.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word; margin-left:440px;margin-top:-37px;">Forum</div></a>
+    <a href="index.html"><img src="MCC_logo.png" style="width:200px; margin-top:-50px;"></a>
+    <!--DROP DOWN MENU-->
+    <div style="margin-left:1170px; margin-top:-190px;"><center>
+    <ul class="nav nav-tabs" style="border-color: #ffffff;">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+            <div style="width: 35px;height: 5px;background-color: black;margin: 3px 0;"></div>
+            <div style="width: 35px;height: 5px;background-color: black;margin: 3px 0;"></div>
+            <div style="width: 35px;height: 5px;background-color: black;margin: 3px 0;"></div>
+            </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="bmi_diet_lifestyle.html">BMI, Diet and Lifestyle</a></li>
+            <li><a class="dropdown-item" href="lgbtq_page.html">LGBTQ+ support</a></li>
+            <li><a class="dropdown-item" href="quiz_page.html">Assessment</a></li>
+            <li><a class="dropdown-item" href="crisis.html">Crisis & Helpline</a></li>
+          </ul>
+        </li>
+      </ul>
+    </center></div>
+    <!--END OF DROP DOWN-->
+    </div>
+    <!--END OF NAV BAR-->
+  <br><br><br><br>
+        
+<!--Questions section-->
+<!--QUESTIONNAIRE-->
+<br><br>
+
+<p style="width:650px; text-align: center; margin-left:100px;">Here's a questionnaire that could help in identifying potential mental health disorders. <br>Keep in mind that this is a general guideline and not a diagnostic tool. <br>A qualified mental health professional should be consulted for an accurate assessment.</p>
+<br> 
+<h1 style="margin-left:100px; font-size: 45px; color:#1c1642">Mental Health Assessment</h1>
+<div style="width:1000px; text-align: justify; margin-left:250px;" id="contentToPrint">  
+<!--
+    <form id="questionnaireForm">
+        <ol>
+            <li>
+                <label for="q1" style="width:700px;">Over the past two weeks, how often have you experienced feeling sad, down, or hopeless?</label>
+                <br><br>
+                <select id="q1" name="q1" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q2">Have you noticed a significant change in your appetite or weight recently?</label><br><br>
+                <select id="q2" name="q2" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q3">Do you find it difficult to fall asleep or stay asleep?</label><br><br>
+                <select id="q3" name="q3" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q4">Do you feel a sense of worthlessness or excessive guilt?</label><br><br>
+                <select id="q4" name="q4" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q5">Have you lost interest or pleasure in activities that you used to enjoy?</label><br><br>
+                <select id="q5" name="q5" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q6">Are you experiencing fatigue or a lack of energy that is affecting your daily activities?</label><br><br>
+                <select id="q6" name="q6" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q7">Are you feeling agitated, restless, or finding it hard to sit still?</label><br><br>
+                <select id="q7" name="q7" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q8" style="width:800px;">Are you experiencing difficulty concentrating, making decisions, or remembering things?</label><br><br>
+                <select id="q8" name="q8" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q9">Do you have recurrent thoughts of death, dying, or thoughts of harming yourself?</label><br><br>
+                <select id="q9" name="q9" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q10">Are you avoiding social interactions or isolating yourself more than usual?</label><br><br>
+                <select id="q10" name="q10" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br><br>
+            <li>
+                <label for="q11">Have you noticed an increase in anxiety, excessive worry, or irrational fears?</label><br><br>
+                <select id="q11" name="q11" style="width:200px;">
+                    <option value="0">Not at all</option>
+                    <option value="3">Sometimes</option>
+                    <option value="5">Often</option>
+                    <option value="0">Prefer not to say</option>
+                </select>
+            <br>
+        </li>
+        </ol>
+        <center><button type="button" class="btn btn-primary btn-lg" onclick="calculateScore()" style="color:white; background-color: black; border-radius: 20px;">Submit</button></center> 
+    </form>-->
+
+    <form id="questionnaireForm">
+        <ol>
+        <li><label for="q1">Over the past two weeks, how often have you experienced feeling sad, down, or hopeless?</label></li>
+        <br>
+        <input type="radio" id="q1_1" name="q1" value="0">
+        <label for="q1_1">Not at all</label><br>
+        <input type="radio" id="q1_2" name="q1" value="3">
+        <label for="q1_2">Sometimes</label><br>
+        <input type="radio" id="q1_3" name="q1" value="5">
+        <label for="q1_3">Often</label><br>
+        <input type="radio" id="q1_4" name="q1" value="0">
+        <label for="q1_4">Prefer not to say</label><br><br><br>
+        
+        <li><label for="q2">Have you noticed a significant change in your appetite or weight recently?</label></li><br>
+        <input type="radio" id="q2_1" name="q2" value="0">
+        <label for="q2_1">Not at all</label><br>
+        <input type="radio" id="q2_2" name="q2" value="3">
+        <label for="q2_2">Sometimes</label><br>
+        <input type="radio" id="q2_3" name="q2" value="5">
+        <label for="q2_3">Often</label><br>
+        <input type="radio" id="q2_4" name="q2" value="0">
+        <label for="q2_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q3">Do you find it difficult to fall asleep or stay asleep?</label><br></li>
+        <input type="radio" id="q3_1" name="q3" value="0">
+        <label for="q3_1">Not at all</label><br>
+        <input type="radio" id="q3_2" name="q3" value="3">
+        <label for="q3_2">Sometimes</label><br>
+        <input type="radio" id="q3_3" name="q3" value="5">
+        <label for="q3_3">Often</label><br>
+        <input type="radio" id="q3_4" name="q3" value="0">
+        <label for="q3_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q4">Do you feel a sense of worthlessness or excessive guilt?</label><br></li>
+        <input type="radio" id="q4_1" name="q4" value="0">
+        <label for="q4_1">Not at all</label><br>
+        <input type="radio" id="q4_2" name="q4" value="3">
+        <label for="q4_2">Sometimes</label><br>
+        <input type="radio" id="q4_3" name="q4" value="5">
+        <label for="q4_3">Often</label><br>
+        <input type="radio" id="q4_4" name="q4" value="0">
+        <label for="q4_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q5">Have you lost interest or pleasure in activities that you used to enjoy?</label><br></li>
+        <input type="radio" id="q5_1" name="q5" value="0">
+        <label for="q5_1">Not at all</label><br>
+        <input type="radio" id="q5_2" name="q5" value="3">
+        <label for="q5_2">Sometimes</label><br>
+        <input type="radio" id="q5_3" name="q5" value="5">
+        <label for="q5_3">Often</label><br>
+        <input type="radio" id="q5_4" name="q5" value="0">
+        <label for="q5_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q6">Are you experiencing fatigue or a lack of energy that is affecting your daily activities?</label><br></li>
+        <input type="radio" id="q6_1" name="q6" value="0">
+        <label for="q6_1">Not at all</label><br>
+        <input type="radio" id="q6_2" name="q6" value="3">
+        <label for="q6_2">Sometimes</label><br>
+        <input type="radio" id="q6_3" name="q6" value="5">
+        <label for="q6_3">Often</label><br>
+        <input type="radio" id="q6_4" name="q6" value="0">
+        <label for="q6_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q7">Are you feeling agitated, restless, or finding it hard to sit still?</label><br></li>
+        <input type="radio" id="q7_1" name="q7" value="0">
+        <label for="q7_1">Not at all</label><br>
+        <input type="radio" id="q7_2" name="q7" value="3">
+        <label for="q7_2">Sometimes</label><br>
+        <input type="radio" id="q7_3" name="q7" value="5">
+        <label for="q7_3">Often</label><br>
+        <input type="radio" id="q7_4" name="q7" value="0">
+        <label for="q7_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q8">Are you experiencing difficulty concentrating, making decisions, or remembering things?</label><br></li>
+        <input type="radio" id="q8_1" name="q8" value="0">
+        <label for="q8_1">Not at all</label><br>
+        <input type="radio" id="q8_2" name="q8" value="3">
+        <label for="q8_2">Sometimes</label><br>
+        <input type="radio" id="q8_3" name="q8" value="5">
+        <label for="q8_3">Often</label><br>
+        <input type="radio" id="q8_4" name="q8" value="0">
+        <label for="q8_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q9">Do you have recurrent thoughts of death, dying, or thoughts of harming yourself?</label><br></li>
+        <input type="radio" id="q9_1" name="q9" value="0">
+        <label for="q9_1">Not at all</label><br>
+        <input type="radio" id="q9_2" name="q9" value="3">
+        <label for="q9_2">Sometimes</label><br>
+        <input type="radio" id="q9_3" name="q9" value="5">
+        <label for="q9_3">Often</label><br>
+        <input type="radio" id="q9_4" name="q9" value="0">
+        <label for="q9_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q10">Are you avoiding social interactions or isolating yourself more than usual?</label><br></li>
+        <input type="radio" id="q10_1" name="q10" value="0">
+        <label for="q10_1">Not at all</label><br>
+        <input type="radio" id="q10_2" name="q10" value="3">
+        <label for="q6_2">Sometimes</label><br>
+        <input type="radio" id="q10_3" name="q10" value="5">
+        <label for="q10_3">Often</label><br>
+        <input type="radio" id="q10_4" name="q10" value="0">
+        <label for="q10_4">Prefer not to say</label><br><br><br>
+    
+        <li><label for="q11">Have you noticed an increase in anxiety, excessive worry, or irrational fears?</label><br></li>
+        <input type="radio" id="q11_1" name="q11" value="0">
+        <label for="q11_1">Not at all</label><br>
+        <input type="radio" id="q11_2" name="q11" value="3">
+        <label for="q11_2">Sometimes</label><br>
+        <input type="radio" id="q11_3" name="q11" value="5">
+        <label for="q11_3">Often</label><br>
+        <input type="radio" id="q11_4" name="q11" value="0">
+        <label for="q11_4">Prefer not to say</label><br><br><br>
+    </ol>
+        
+        
+        <center><button type="button" class="btn btn-primary btn-lg" onclick="calculateScore()">Submit</button></center> 
+         
+    </form>
+    
+
+
+</div>
+
+    <br><br>
+    <h1 id="result" style="margin-left: -700px;">Result: </h1>
+    <br><br>
+    <p style="width:900px; margin-left: 20%; text-align: justify;">
+<br>If you've obtained a score < 30, you are perfectly fine! There is no need to worry.<br>
+    If you've obtained a score >= 30, you are exhibiting mild symptoms. Consult a doctor at your convenience.<br>
+    If you've obtained a score >= 40, you must visit a doctor.<br><br>
+    Keep in mind that this questionnaire is not a substitute for professional assessment. If you have concerns about your mental health, it's important to consult a mental health professional for a comprehensive evaluation and appropriate guidance.
+    <br><br>Remember, seeking help is a sign of strength, and there is support available to help you navigate your mental health journey.</p>
+    
+    <img style="width: 300px; height: 350px; float: right; margin-right: 50px; margin-top:-1700px; border-radius: 800px;" src="chat with us.png">
+
+<br><br>
+
+<!--FOOTER-->
+<hr>
+<p style="text-align: center; font-weight: bolder;">MindCare Connect</p>
+<p style="text-align: center; margin-top:-20px; font-weight: bolder;">@2023. All Rights Reserved.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calculator {
+    text-align: center;
+    margin: 20px auto;
+    padding: 30px;
+    background-color:#E2D5D5;
+    border: 3px solid rgb(71, 26, 26);
+    width: 500px;
+    height:500px;
+    border-radius: 30px;
+}
+
+label, input, button {
+    /* display: block; */
+    margin: 10px 0;
+}
+
+
+

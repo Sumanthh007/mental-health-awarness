@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MindCare Connect</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="bmi.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bmis.js"></script>
+    <link rel="stylesheet" href="reveal_ani.css">
+    <script src="reveal_ani.js"></script>
+</head>
+
+<body style="background-color:#FFFFFF; background-image: linear-gradient(#FFFFFF, #D3C0D2); overflow-x: hidden;">
+  <!--NAV BAR-->
+  <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script src="https://mediafiles.botpress.cloud/48f879f3-f15f-4195-9ddd-126ea094aae6/webchat/config.js" defer></script>
+
+  <div style="background-color: #FFFFFF;">
+  <a><img src=""></a>
+  <a href="blog_page.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word;margin-left:900px;">Blog</div></a>
+  <a href="about_us.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word; margin-left:700px;margin-top:-37px;">About us</div></a>
+  <a href="index.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word; margin-left:240px;margin-top:-37px;">Home</div></a>
+  
+  <a href="forum_discussion_page.html" style="text-decoration: none;"><div style="text-align: center; color: black; font-size: 25px; font-family: Nunito; font-weight: 700; word-wrap: break-word; margin-left:440px;margin-top:-37px;">Forum</div></a>
+  <a href="index.html"><img src="MCC_logo.png" style="width:200px; margin-top:-50px;"></a>
+  <!--DROP DOWN MENU-->
+  <div style="margin-left:1170px; margin-top:-190px;"><center>
+  <ul class="nav nav-tabs" style="border-color: #ffffff;">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          <div style="width: 35px;height: 5px;background-color: black;margin: 3px 0;"></div>
+          <div style="width: 35px;height: 5px;background-color: black;margin: 3px 0;"></div>
+          <div style="width: 35px;height: 5px;background-color: black;margin: 3px 0;"></div>
+          </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="bmi_diet_lifestyle.html">BMI, Diet and Lifestyle</a></li>
+          <li><a class="dropdown-item" href="lgbtq_page.html">LGBTQ+ support</a></li>
+          <li><a class="dropdown-item" href="quiz_page.html">Assessment</a></li>
+          <li><a class="dropdown-item" href="crisis.html">Crisis & Helpline</a></li>
+        </ul>
+      </li>
+    </ul>
+  </center></div>
+  <!--END OF DROP DOWN-->
+  </div>
+  <!--END OF NAV BAR-->
+<br><br><br><br>
+
+<!--BLOG POSTS-->
+<h1 style="color: #1c1642;text-align:justify; margin-top:50px; margin-left:80px; font-size:45px; width:800px;">Understanding BMI (Body Mass Index)</h1>
+<p style="width:1000px; color:black; text-align:justify; margin-left: 80px;">BMI, or Body Mass Index, is a widely used measure to assess an individual's body weight in relation to their height. It provides a simple way to categorize a person's weight into various classes, from underweight to obese, helping to identify potential health risks associated with weight.</p>
+<h1 style="color: #1c1642;text-align:justify; margin-top:50px; margin-left:80px; font-size:45px; width:800px;">What is BMI?</h1>
+<p style="width:1000px; color:black; text-align:justify; margin-left: 80px;">BMI is calculated using a person's weight (in kilograms) and height (in meters) with the following formula:
+    <br><b>BMI = weight (kg) / (height (m) * height (m))</b><br>
+    The result is a numerical value that falls into one of the following categories:<br>
+Underweight: BMI < 18.5<br>
+Normal weight: 18.5 <= BMI < 24.9<br>
+Overweight: 25 <= BMI < 29.9<br>
+Obese: BMI >= 30<br>
+Please note that while BMI can be a useful tool, it has its limitations. It doesn't take into account factors like muscle mass, bone density, and distribution of fat. Therefore, it's essential to interpret BMI results in conjunction with other health assessments.
+</p>
+<h1 style="color: #1c1642;text-align:justify; margin-top:50px; margin-left:80px; font-size:45px; width:800px;">BMI Calculator</h1>
+<p style="width:1000px; color:black; text-align:justify; margin-left: 80px;">Use our BMI calculator below to find out your BMI. Simply enter your weight in kilograms and your height in meters, and the calculator will give you your BMI category.</p>
+<br><center>
+  <!--BMI CALCULATOR-->
+    <h1 style="color:#000000">BMI Calculator</h1>
+    <div class="calculator">
+        <label for="weight">Weight (kg):</label>
+        <center><input type="number" id="weight" step="0.01"><br></center>
+        <label for="height">Height (m):</label>
+        <center><input type="number" id="height" step="0.01"><br></center>
+        <center>
+        <form>
+          <label for="gender">Gender:</label><br>
+          <select id="gender" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="nonbinary">Non-Binary</option>
+              <option value="prefer_not_to_say">Prefer not to say</option>
+          </select>
+       </form></center>
+<br>
+        <center><button type="button" class="btn btn-secondary" onclick="calculateBMI()" style="background-color: #A05956;">Calculate BMI</button></center>
+        <br>
+        <div id="result"></div>
+    </div></center>
+  <!--END OF BMI CALCULATOR-->
+
+    <br>
+    <h1 style="color: #1c1642;text-align:justify; margin-top:50px; margin-left:80px; font-size:45px; width:800px;">BMI Table for Adults</h1>
+<p style="width:1000px; color:black; text-align:justify; margin-left: 80px;">This is the World Health Organization's (WHO) recommended body weight based on BMI values for adults. It is used for both men and women, age 20 or older.</p>
+<center><img src="bmi.png" style="width:300px; border-radius: 10px;"></center>
+<br><br>
+
+<h1 style="color: #1c1642;text-align:justify; margin-top:50px; margin-left:80px; font-size:45px; width:800px;">Exploring the Connection Between BMI and Mental Well-being</h1>
+<p style="width:1000px; color:black; text-align:justify; margin-left: 80px;">At EmbracingHonesty, we understand that an individual's Body Mass Index (BMI) is not just a number on a scale; it can have broader implications for mental health and overall well-being. While BMI primarily measures physical health, its influence on mental health can be observed through several interconnected aspects:</p>
+<br><br>
+<center>
+<!--CARDS-->
+<div class="card"  style="width:350px; border-radius: 5px; margin-left:100px; height:400px; text-align: justify; margin-left:-700px;">
+  <div class="card-body"><br>
+    <center style="text-align: justify;"><h5 class="card-title">Self-Perception and Body Image</h5><br>
+    <p class="card-text">MI plays a role in shaping how we perceive our bodies, which, in turn, affects self-esteem. This self-perception can have significant implications for mental health, with low or high BMIs potentially contributing to body image concerns and related mental health challenges.</p>
+  </center></div>
+</div>
+<br><br>
+<div class="card"  style="width:350px; border-radius: 5px; margin-left:25px; height:400px; text-align: justify; margin-top:-390px">
+  <div class="card-body"><br><br>
+    <center style="text-align: justify;"><h5 class="card-title">Emotional Responses and Coping Mechanisms</h5><br>
+    <p class="card-text">Emotional eating, triggered by stress, anxiety, or depression, can impact BMI. When individuals use food as a way to cope with their emotions, it can lead to weight fluctuations and associated mental health concerns.</p>
+  </center></div>
+</div>
+<br><br>
+<div class="card"  style="width:350px; border-radius: 5px; height:400px; text-align: justify; margin-left:750px; margin-top:-390px">
+  <div class="card-body"><br><br>
+    <center style="text-align: justify;"><h5 class="card-title">Societal Perceptions and Stigma</h5><br>
+    <p class="card-text">Weight-based stigma and discrimination, often faced by individuals with higher BMIs, can result in mental health issues like low self-esteem, social isolation, and a negative impact on overall well-being and also mental health challenges such as depression, anxiety, or even eating disorders.</p>
+  </center></div>
+</div>
+</center>
+<br><br>
+<!--CARDS END-->
+
+<center><img src="15.png" style="width:500px; border-radius: 500px;" class="reveal"></center>
+<br><br>
+
+
+<h1 style="color: #1c1642;text-align:justify; margin-top:50px; margin-left:80px; font-size:45px; width:800px;">Lifestyle and Mental Health:</h1>
+<br><br>
+<div class="accordion" id="accordionExample" style="margin-left:100px; width:1000px;">
+  <div class="accordion-item" style="background-color: rgb(231, 229, 229);">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        How does lifestyle affect mental health?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <b>Your lifestyle exerts a substantial influence on your mental health and overall well-being. It encompasses a range of factors, including diet, exercise, sleep, stress management, and social connections. These elements can either nurture or challenge your mental equilibrium.</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item" style="background-color: rgb(231, 229, 229);">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        What role does diet, exercise, and sleep play in mental health?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <b>Diet, exercise, and sleep are fundamental pillars of mental health. A balanced diet provides essential nutrients that support mood stability and cognitive function. Regular physical activity releases endorphins, natural mood enhancers, while adequate sleep is crucial for emotional regulation and stress management.
+      </b></div>
+    </div>
+  </div>
+
+
+  <div class="accordion-item" style="background-color: rgb(231, 229, 229);">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How do social connections impact mental health?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <b>Positive social connections and a sense of community are vital for mental health. They provide emotional support, a sense of belonging, and opportunities for sharing experiences, all of which contribute to a robust mental health foundation.</b>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item" style="background-color: rgb(231, 229, 229);">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How can one consciously nurture these aspects of their lifestyle for better mental health?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <b>To improve mental health, individuals can focus on maintaining a balanced diet, engaging in regular physical activity, ensuring adequate sleep, practicing stress reduction techniques, fostering positive social connections, and promoting self-care. By attending to these aspects of their lifestyle, individuals can enhance their resilience and overall mental well-being.</b></div>
+    </div>
+  </div>
+
+
+
+
+  <div class="accordion-item" style="background-color: rgb(231, 229, 229);">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Why is stress management and self-care essential for mental well-being?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <b>Chronic stress can lead to mental health disorders like anxiety and depression. Stress reduction techniques, mindfulness, and self-compassion are critical components of a balanced lifestyle to counteract the negative effects of stress.
+      </b></div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<!--FOOTER-->
+<hr>
+<p style="text-align: center; font-weight: bolder;">MindCare Connect</p>
+<p style="text-align: center; margin-top:-20px; font-weight: bolder;">@2023. All Rights Reserved.</p>
+</body>
+</html>

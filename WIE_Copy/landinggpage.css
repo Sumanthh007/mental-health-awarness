@@ -1,0 +1,42 @@
+#myvideo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+#starting{
+    position: relative;
+    background-color: rgb(87, 77, 77);
+    width: 500px;
+    left: 558px;
+    top: 230px;
+    height: 150px;
+    border-radius: 20px;
+}
+.heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 6px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Nova Square', sans-serif;
+}
+.buttons{
+    text-align: center;
+}
+.btn{
+    padding: 15px 51px;
+    margin: 0px 21px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn:hover{
+    cursor: grab;
+    background-color: blue;
+    color: white;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+    font-family: 'Nova Square', sans-serif;
+    font-size: 25px ;
+}
